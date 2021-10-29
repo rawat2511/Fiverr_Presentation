@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.dlpng.com/static/png/6952373_preview.png">
+    <link rel="shortcut icon" href="https://i.dlpng.com/static/png/5419915-circle-fiverr-round-icon-icon-fiverr-png-512_512_preview.png" type="image/x-icon">
+    <title>Article & Blog Writing Services</title>
+    <style>
+        /*header*/
+    * {
+    padding: 0;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+.dot {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #1dbf73;
+    }
+.header {
+    width: 80%;
+    margin: auto;
+    color: rgb(90, 88, 88);
+    margin-bottom: 0px;
+    }
+.nav {
+    height: 80px;
+    }
+
+ul{
+    list-style-type: none;
+    box-sizing: border-box;
+}
+.nav li{
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+}
+#logo {
+    float: left;
+    font-size: 30px;
+    font-weight: 800;
+    margin-right: 0px;
+}
+.nav > ul > li~li{
+    margin-top: 12px;
+    margin-right: 15px;
+}
+.nav > ul>.gap{
+    margin-right: 150px;
+    margin-left: 0px;
+}
+input{
+    height: 28px;
+    margin: 0px;
+    width: 300px;
+    border: 1px solid rgb(90, 88, 88);
+    border-radius: 3px;
+    margin-right: 0px;
+}
+.search{
+    background-color:#1dbf73 ;
+    color: white;
+    height: 30px;
+    margin: 0px;
+    border: 1px solid #1dbf73;
+    width: 70px;
+    border-radius: 3px;
+    margin-left: 0px;
+    padding-top: 3px;
+}
+.search:hover{
+    background-color: #0a7543;
+}
+.skyblue{
+    color: #02c2a9;
+}
+.adjust{
+    padding-top: 8px;
+
+}
+.adjust:hover{
+    color: #1dbf73;
+}
+.join{
+    border: 1px solid #1dbf73;
+    width: 50px;
+    background-color: white;
+    padding:5px;
+    color: #1dbf73;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.join:hover{
+    color: white;
+    background-color: #1dbf73;
+}
+.mo{
+    padding-top: 0px;
+}
+.nav2 li{
+    float: left;
+    height: 30px;
+    margin: 5px 15px;
+    margin-bottom: 0px;
+    transition: 0.3s;
+}
+.nav2 li:hover{
+    text-decoration: 3px underline #1dbf73;
+    text-underline-position: under ;
+}
+        /*end*/
+        .heading{
+            text-align: left;
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .heading h1{
+            font-size: 32px;
+            width: 100%;
+        }
+        .explainationvideo{
+            color: blue;
+            margin: 0px;
+            margin-left: 5px;
+            font-size: 16px;
+        }
+        .heading > h1+p,.language p{
+            color: rgb(126, 119, 119);
+            margin: 0px;
+            font-size: 16px;
+        }
+        .explainationvideo:hover{
+             text-decoration: underline;
+        }
+        .language{
+            width: 80%;
+            margin-top: 10px;
+        }
+        .lanBlocks img{
+            height: 46px;
+            width: 46px;
+            margin: 10px;
+            margin-bottom: 20px;
+        }
+        .lanBlocks{
+            display: flex;
+            margin:10px 0;
+        }
+        .lanBlocks div{
+            border: 1px solid #e4e5e7;
+            border-radius: 4px;
+            color: #222325;
+            width: 150px;
+            height: 100px;
+            flex-direction: column;
+            margin-right: 10px;
+            margin-left: 0px;
+        }
+        .lanBlocks div:hover{
+            color: #1dbf73;
+            box-shadow: 2px 3 px 5px #343435;
+        }
+        .categories{
+            width: 80%;
+            display: flex;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+        .categories > .blocks{
+            width: 24%;
+            border: 1px solid #e4e5e7;
+            margin:0px;
+            margin-right: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .blocks .img_size{
+            width: 100%;
+        }
+        .author{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .author img{
+            border-radius: 50%;
+            width: 10%;
+            margin-left: 10px;
+            margin-right: 5px;
+
+        }
+        .author div{
+            margin: 0px;
+            font-size: 60%;
+        }
+        .author div p{
+            color: #b4b3b3;
+        }
+        .blocks h3{
+            font-size: 16px;
+            margin-left: 10px;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+        .blocks h3:hover{
+            color: #1dbf73;
+        }
+        .blocks .rating{
+            color: gold;
+            margin: 0px;
+            margin-left: 10px;
+            display: flex
+        }
+        .rating p{
+            color: #b4b3b3;
+            margin: 0px;
+            margin-left: 5px;
+            margin-top: 4px;
+        }
+        .blocks hr{
+            border: 0.01px solid #e9e7e7;
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .blocks .footerr{
+            display: flex;
+            margin: 0px;
+        }
+        .blocks .footerr div{
+            text-align: right;
+            margin-top: 5px;
+            margin-right:10px ;
+            font-size: 10px;
+            color: #b4b3b3;
+            margin-bottom: 0px;
+        }
+        .blocks .footerr div p{
+            color: black;
+            margin: 5px;
+        }
+        .blocks .footerr .heart{
+            margin: 0px;
+            margin-left: 10px;
+            color: grey;
+            font-size: 25px;
+        }
+        .categories .button{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .button button{
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border: 1px solid black;
+            margin:4px;
+        }
+        .explore{
+            width: 80%;
+            margin:auto;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .explore div{
+            float: left;
+            background-color: #e9e7e7;
+            border-radius: 20px;
+            margin: 10px;
+            padding: 10px;
+            color: #343435;
+        }
+        hr{
+            width: 80%;
+            margin: auto;
+        }
+        .faqs{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .faqs div{
+            float: left;
+            width: 41%;
+            text-align: left;
+            font-size: 15px;
+            color: #343435;
+            margin-right: 100px;
+            margin-top: 20px;
+        }
+        .faqs div p{
+            color: #b4b3b3;
+        }
+        .header hr{
+            width: 100%;
+        }
+        /*footer*/
+        .footer{
+                                      margin: auto;
+                                  }
+                                  .footer-top {
+                                    display: flex;
+                                    flex-direction: row;
+                                    border-top: 1px solid rgb(235, 231, 231);
+                                    margin-top: 120px;
+                                }
+                                .footer-top .list {
+                                    flex-grow: 1;
+                                    padding: 30px;
+                                    margin: 20px;
+                                }
+                                .footer-top li {
+                                    color: rgb(138, 133, 133);
+                                    padding-top: 20px;
+                                }
+                                .list > ul > .first-item {
+                                    color: black;
+                                    font-weight: bold;
+                                }
+                                .list > ul > .sub-item {
+                                    color: rgb(192, 185, 185);
+                                    font-size: 14px;
+                                    padding-top: 4px;
+                                }
+
+                                .desc {
+                                    width: 600px;
+                                    padding-top: 120px;
+                                }
+                                .desc > h1, .get-started > h1 {
+                                    font-size: 48px;
+                                }
+                                .list-bottom > li {
+                                    color: black;
+                                    float: right;
+                                    padding: 20px 10px 30px;
+                                }
+                                .list-bottom > li:first-child {
+                                    float: left;
+                                }
+                                .list-bottom > li:nth-child(2) {
+        float: left;
+}
+                             /* footer bottom  */
+                             .footer-bottom > .list-bottom> .inr-line, .footer-bottom > .list-bottom> .eng-line {
+                                font-size: 14px;
+                                font-weight: bold;
+                                color: rgb(141, 135, 135);
+                            }
+                            .inr-line > i, .eng-line > i {
+                                scale: 0.8;
+                            }
+                            .footer-bottom > .list-bottom> li:first-child {
+                                font-size: 24px;
+                                font-weight: 800;
+                                margin-left: 36px;
+                                color: #7a7a7a;
+                            }
+                            .reg {
+                                font-size: 10px;
+                                color: #8c8c8d;
+                            }
+                            .footer-bottom > .list-bottom> li:nth-child(2){
+                                color: #9e9ea0;
+                                margin-top: 10px;
+                            }
+                            .footer-bottom {
+                                border-top: 1px solid rgb(228, 222, 222);
+                            }
+
+        /*end*/
+        @media (max-width:1160px) {
+    .categories >.content{
+        display: none;
+    }
+    .categories{
+        margin: auto;
+        margin-top: 20px;
+    }
+    .header hr{
+        margin: 10px;
+    }
+    .header .nav2{
+        overflow: scroll;
+        height: 20px;
+    }
+    .headClean{
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <ul>
+                <li id="logo">fiverr<span class="dot">.</span></li>
+                <li class="adjust mo"><button class="join">Join</button></li>
+                <li class="adjust">Sign In</li>
+                <li class="adjust">Become a Seller</li>
+                <li class="adjust headClean">₹ INR</li>
+                <li class="adjust headClean">English</li>
+                <li class="adjust headClean">Explore</li>
+                <li class="skyblue adjust headClean">Fiverr Pro</li>
+                <li class="gap"><input type="text" value="&#128269;Find Services"><button class="search headClean">Search</button></input>
+                </li>
+            </ul>
+        </div>
+        <hr/>
+        <nav class="nav2">
+            <ul>
+                <li>Graphics & Design</li>
+                <li>Digital Marketing</li>
+                <li>Writing & Translation</li>
+                <li>Video & Animation</li>
+                <li>Music & Audio</li>
+                <li>Pragramming & Tech</li>
+                <li>Data</li>
+                <li>Business</li>
+                <li>Lifestyle</li>
+            </ul>
+        </nav>
+        <div style="clear: left;"></div>
+        <hr/>
+    </div>
+    <div class="heading">
+        <h1>Articles & Blog Posts</h1>
+        <p>Keep your readers engaged with fresh content.<div class="explainationvideo">&#10148; How Fiverr Works</div></p>
+    </div>
+    <div class="language">
+        <p>STEP 1 OF 2</p>
+        <h3>Select article language</h3>
+        <div class="lanBlocks">
+            <div><img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/search_perseus/apps/english.1e09eaf.png"/>English</div>
+            <div><img src = "https://fiverr-res.cloudinary.com/npm-assets/@fiverr/search_perseus/apps/spanish.fc12a26.svg"/>Spanish</div>
+            <div><img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/search_perseus/apps/french.1f7bd0b.svg"/>French</div>
+            <div><img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/search_perseus/apps/german.74efee7.svg"/>German</div>
+            <div><img src = "https://fiverr-res.cloudinary.com/npm-assets/@fiverr/search_perseus/apps/italian.ff8223b.svg"/>Italian</div>
+            <div><img src = "https://fiverr-res.cloudinary.com/npm-assets/@fiverr/search_perseus/apps/dutch.0193f3b.svg"/>Dutch</div>
+            <div><img src = "https://fiverr-res.cloudinary.com/npm-assets/@fiverr/search_perseus/apps/view_all.02245c1.svg"/>view all ></div>
+        </div>
+    </div>
+    <div class="categories">
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/191666807/original/1cbba0f3da2dc3aba985ddd024a3e5df0b119380.png"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/826bbc3e387536bdc780cbe1a302dbc1-1578225055756/fc79c645-df84-4ee3-995c-e5c20cbb7be7.jpeg"/>
+                <div><b>callummarsha465</b>
+                  <p>Level 2 Seller</p>
+                </div>
+            </div>
+            <h3>I will write outdoor adventure and travel articles</h3>
+            <div class="rating">&#9733; 5.0<p>(31)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">	&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;1950</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/video/upload/so_28.358019,t_gig_cards_web/wslnwtgx63zpshyg5oix.png"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f29086af828237ef1f9537ca849f5ff2-1623543144223/c997680b-3678-4cf9-944e-274322945714.jpg"/>
+                <div><b>momnaikram970</b>
+                  <p>Level 2 Seller</p>
+                </div>
+            </div>
+            <h3>I will be an SEo content writer and article writer</h3>
+            <div class="rating">&#9733; 4.9<p>(1K+)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">	&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;780</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/198206731/original/2718411753f2e1a9f1a70501d307e4efd71aeb53.jpg"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/82a31444befd10de9709b075ab111fb3-1619740696772/a494b64f-07e3-4a2f-b341-7802c97ee26f.jpg"/>
+                <div><b>kobewilliams568</b>
+                  <p>Level 1 Seller</p>
+                </div>
+            </div>
+            <h3>I will write SEO friendly investment articles and blogs</h3>
+            <div class="rating">&#9733; 5.0<p>(11)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">	&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;780</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/194571009/original/9b5ddb78a6834b6e4b506e95899278ab46c8fc08.jpg"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/e4b62b8b3b148d9043c9257e024880d4-1628102166531/6dd63f8b-65bb-49b0-aed3-fd245556cede.jpeg"/>
+                <div><b>mushoo_studios</b>
+                  <p>Level 1 Seller</p>
+                </div>
+            </div>
+            <h3>I will write engaging and high quality SEO blog articles</h3>
+            <div class="rating">&#9733; 5.0<p>(31)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">	&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;1950</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/214673657/original/7faa08fd7e093cf5214cb8978e684e5b11d4bbc4.png"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/78d0be3fd36c382d1c260c0b9c875325-1623871639484/2063d854-7479-423b-b5ab-2cebf2f0bb3d.jpg"/>
+                <div><b>laurenravenscro</b>
+                  <p>Level 1 Seller</p>
+                </div>
+            </div>
+            <h3>I will write for your blog and the  social media articles  </h3>
+            <div class="rating">&#9733; 5.0<p>(19)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;1560</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/196046766/original/a0914f5488a245fd3b84fa42ba8f0553116136fc.jpg"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/76803bc013ab15d09b23d9bd596158ca-1615952679698/e38bde1b-9018-44ce-b6e8-3c3ba3986717.jpg"/>
+                <div><b>krystinaq</b>
+                  <p>Level 2 Seller</p>
+                </div>
+            </div>
+            <h3>I will write travel are food blog  articles posts</h3>
+            <div class="rating">&#9733; 5.0<p>(86)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">	&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;1950</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/210320832/original/2b1686a6c38d0fb35e240e00af559300116468cd.png"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/bdb1c44b83fa3f5c2fdedf134a27fef3-1623832572070/5d4cb8f8-c6f2-45e4-8eb5-680d084c1365.JPG"/>
+                <div><b>french_miner</b>
+                  <p>Level 2 Seller</p>
+                </div>
+            </div>
+            <h3>I will write an optimesed SEo blog article in french</h3>
+            <div class="rating">&#9733; 5.0<p>(24)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;390</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/174547868/original/0109429b6db6395208458835989df9859ced6f64.jpg"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/358f69056688ff22454fdf0888bb9877-1587403457793/a0088f42-62d3-44dc-ad92-6f9d334d5da5.jpg"/>
+                <div><b>bondt871</b>
+                  <p>Level 2 Seller</p>
+                </div>
+            </div>
+            <h3>I will write high quality SEO content or articles</h3>
+            <div class="rating">&#9733; 5.0<p>(43)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">	&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;1170</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/1577494/original/pencil-17808_640.jpg"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/profile/photos/212164/original/DSCF2268.JPG"/>
+                <div><b>russflex</b>
+                  <p>Level 2 Seller</p>
+                </div>
+            </div>
+            <h3>I will write articles or blogs and social media</h3>
+            <div class="rating">&#9733; 5.0<p>(1k+)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">	&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;390</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/205289827/original/6561372adf47dce13e95ed274533408e4fa44267.jpg"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/5e6884181fb9bac83af29d3652a02707-1619723192633/68435ead-52bd-49dc-91c1-5557c83d49a0.jpg"/>
+                <div><b>lizzy_writy</b>
+                  <p>Level 1 Seller</p>
+                </div>
+            </div>
+            <h3>I will write SEO blogs content writer,website writer</h3>
+            <div class="rating">&#9733; 5.0<p>(79)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">	&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;1150</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/168618094/original/c85b048f00daeef707023ae202049d3899b2f5a4.jpg"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/02212378a83dfb5cfe61c5e7ef56cb09-1588608505427/62049725-710b-41b4-9149-a9f0d6b53565.png"/>
+                <div><b>callummarsha</b>
+                  <p>Level 2 Seller</p>
+                </div>
+            </div>
+            <h3>I will write outdoor adventure and travel articles</h3>
+            <div class="rating">&#9733; 5.0<p>(3)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">	&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;9748</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/4712593/original/f03f931127afcdaa57e332992882bb87ab84260a.png"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/6a312395bd615032e7223f25e5f6fc39-1597594313749/1e4f81ea-41ae-4b35-979b-74f160773451.png"/>
+                <div><b>forcontentworld</b>
+                  <p>Top rated Seller</p>
+                </div>
+            </div>
+            <h3>I will write a 500 word blog or web page, seo optimesed</h3>
+            <div class="rating">&#9733; 5.0<p>(395)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">	&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;5069</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/150045004/original/bb44140605f12e64ae4fea8a2c9b8d04b7e45cbe.png"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/d5364d00ef1d20fe52e0b32b4f584335-852788481617611704666/JPEG_20210405_133503_218594215777469698.jpg"/>
+                <div><b>asrakhan87</b>
+                  <p>Level 1 Seller</p>
+                </div>
+            </div>
+            <h3>I will write social media,blogs,conent writer.</h3>
+            <div class="rating">&#9733; 4.9<p>(30)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">	&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;1170</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/158489677/original/2ed13b4c2fb936b672f18b3d18bfbf18b2008f06.jpg"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/885c07f800bb6b0dced4b6850f1a8feb-1590592353058/b32a43d3-0c72-4047-8191-c3dc54fc1c5f.jpg"/>
+                <div><b>niktheauthor</b>
+                  <p>Level 2 Seller</p>
+                </div>
+            </div>
+            <h3>I will write outdoor adventure and travel articles</h3>
+            <div class="rating">&#9733; 5.0<p>(151)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">	&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;1170</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/194208698/original/fe9d63bacdad73f7606d1d56da5c68c3f3793e9b.jpg"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/1951505248ccbd8726f0598c42c7bb92-1615199366189/30eec847-36d9-4549-b2cc-95305b906aa7.jpg"/>
+                <div><b>leonieduetzer</b>
+                  <p>Level 1 Seller</p>
+                </div>
+            </div>
+            <h3>I will write outdoor adventure and travel articles for you</h3>
+            <div class="rating">&#9733; 5.0<p>(42)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">	&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;780</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/134212823/original/c47bb4feff47f6b3a1a6073361c0497616ec17b6.png"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/688e57058dd2c9c36013e213659dbc22-793251071618301029220/JPEG_20210413_130348_6504975326090970648.jpg"/>
+                <div><b>words_spells</b>
+                  <p>Level 1 Seller</p>
+                </div>
+            </div>
+            <h3>I will be your social media,blogs,content writer</h3>
+            <div class="rating">&#9733; 4.9<p>(30)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">	&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;1170</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/167875075/original/f2afa4ebc1887bb0ae92901e90135acd0f1233e8.png"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/02212378a83dfb5cfe61c5e7ef56cb09-1588608505427/62049725-710b-41b4-9149-a9f0d6b53565.png"/>
+                <div><b>clearvoicepro</b>
+                  <p>Level 2 Seller</p>
+                </div>
+            </div>
+            <h3>I will write and edit your SEO article or blog</h3>
+            <div class="rating">&#9733; 4.6<p>(8)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">	&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;11698</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/198206731/original/2718411753f2e1a9f1a70501d307e4efd71aeb53.jpg"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/82a31444befd10de9709b075ab111fb3-1619740696772/a494b64f-07e3-4a2f-b341-7802c97ee26f.jpg"/>
+                <div><b>kobewilliams568</b>
+                  <p>Level 1 Seller</p>
+                </div>
+            </div>
+            <h3>I will write SEO friendly investment articles and blogs</h3>
+            <div class="rating">&#9733; 5.0<p>(11)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">	&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;780</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/194571009/original/9b5ddb78a6834b6e4b506e95899278ab46c8fc08.jpg"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/e4b62b8b3b148d9043c9257e024880d4-1628102166531/6dd63f8b-65bb-49b0-aed3-fd245556cede.jpeg"/>
+                <div><b>mushoo_studios</b>
+                  <p>Level 1 Seller</p>
+                </div>
+            </div>
+            <h3>I will write engaging and high quality SEO blog articles</h3>
+            <div class="rating">&#9733; 5.0<p>(31)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">	&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;1950</p></div>
+            </div>
+        </div>
+        <div class="blocks">
+            <img class = "img_size" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/214673657/original/7faa08fd7e093cf5214cb8978e684e5b11d4bbc4.png"/>
+            <div class="author">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/78d0be3fd36c382d1c260c0b9c875325-1623871639484/2063d854-7479-423b-b5ab-2cebf2f0bb3d.jpg"/>
+                <div><b>laurenravenscro</b>
+                  <p>Level 1 Seller</p>
+                </div>
+            </div>
+            <h3>I will write for your blog and the  social articles  </h3>
+            <div class="rating">&#9733; 5.0<p>(19)</p></div>
+            <hr/>
+            <div class="footerr">
+                <p class="heart">&#9829;</p>
+                <div>STARTING AT<p>&#x20B9;1560</p></div>
+            </div>
+        </div>
+        <div class="button">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>10</button>
+            <button>></button>
+        </div>
+    </div>
+    <hr/>
+    <div class="explore">
+        <h2>Explore More Articles & Blog Posts Services</h2>
+        <div>Content Marketing</div><div>SEO Services </div><div>Translation Services</div><div>Proofreading and Editing</div><div>Influencer Marketing</div><div>Case Study Writing</div><div>UX Writing</div><div>White Papers Writing</div><div>Podcast WritingListicle writers</div><div>News story writers</div><div>Conversational Articles & Blog Posts</div><div>Humorous Articles & Blog Posts</div><div>Opinionated Articles & Blog Posts</div><div>Professional/formal Articles & Blog Posts</div><div>Auto & Transportation Articles & Blog Posts</div><div>Beauty & Fashion Articles & Blog Posts</div><div>Business, Finance & Law Articles & Blog Posts</div><div>Entertainment & Gaming Articles & Blog Posts</div><div>Family & Education Articles & Blog Posts</div><div>Food & Beverage Articles & Blog Posts</div><div>Health & Medical Articles & Blog Posts</div><div>Internet & Technology Articles & Blog Posts</div><div>News & Politics Articles & Blog Posts</div><div>Real Estate Articles & Blog Posts</div><div>Retail & Ecommerce Articles & Blog Posts</div><div>Sports & Recreation Articles & Blog Posts</div><div>Travel & Hospitality Articles & Blog Posts</div><div>General Articles & Blog Posts</div><div>Articles & Blog Posts</div>
+        <div style="clear: both;"></div>
+    </div>
+    <hr/>
+    <div class="faqs">
+        <h2>Articles & Blog Posts FAQs</h2>
+        <div>
+           <b>What's the difference between a blog post & an article?</b>
+           <p>The difference between articles and blog posts is not as clear cut as it used to be. Blog posts used to be short written pieces, often based on the writer’s opinion. Articles were longer pieces, based on research and interviews. These days, many sites publish long form blog posts, based on research and interviews, that are very similar to articles. The label is less important than creating and publishing a valuable and trustworthy piece of content, whatever the length</p>
+        </div>
+        <div>
+            <b>What kind of articles are most common?</b>
+            <p>There’s a variety of common article types. Both online and offline publications publish feature articles, which focus on or profile a particular person, company, product, or service. In addition, how-to articles, which explain the steps needed to carry out a task, are very popular. Online, list type articles are also very popular. In the last few years, articles based on original research and data have also become common. Many readers also enjoy long-form articles and opinion pieces</p>
+        </div>
+        <div>
+            <b>How long should a blog post be for SEO?</b>
+            <p>There is no set length. Search engines are more concerned about how relevant the content is to the searcher’s query. However, blog posts have got longer. Where blog posts used to be 500-750 words, they are often 1200 words or more now. And long-form content has become more popular, so it’s not unusual to see in-depth guides and resources that are more than 3,000 words long.</p>
+        </div>
+        <div>
+            <b>What are the benefits of blogging for businesses?</b>
+            <p>One of the key benefits of blogging for businesses is that blogging is proven to help companies get more leads, and more leads usually means more sales. Blogging is part of content marketing and inbound marketing, which both use content to help potential customers find your business. When you blog, and use SEO to help your content show up in search results, more people find your website. Once they’re there, you can attract and retain them with even more content.</p>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="footer">
+        <div class="footer-top">
+            <div class="list">
+                <ul>
+                    <li class="first-item">Categories</li>
+                    <li>Graphics & Design</li>
+                    <li>Writing & Translations</li>
+                    <li>Video & Animations</li>
+                    <li>Music & Audio</li>
+                    <li>Programming & Tech</li>
+                    <li>Data</li>
+                    <li>Business</li>
+                    <li>Lifestyle</li>
+                    <li>Sitemap</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li class="first-item">About</li>
+                    <li>Careers</li>
+                    <li>Press & News</li>
+                    <li>Partnerships</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                    <li>Intellectual Propery Claims</li>
+                    <li>Invertor Relations</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li class="first-item">Support</li>
+                    <li>Help & Support</li>
+                    <li>Trust & Safety</li>
+                    <li>Selling on Fiverr</li>
+                    <li>Buying on Fiverr</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li class="first-item">Community</li>
+                    <li>Events</li>
+                    <li>Blog</li>
+                    <li>Forum</li>
+                    <li>Community Standerds</li>
+                    <li>Podcasts</li>
+                    <li>Affiliates</li>
+                    <li>Invite a Friend</li>
+                    <li>Become a Seller</li>
+                    <li>Fiver Elevate</li>
+                    <li class="sub-item">Exclusive Benefits</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li class="first-item">More From Fiverr</li>
+                    <li>Fiverr Business</li>
+                    <li>Fiverr Pro</li>
+                    <li>Fiverr Studios</li>
+                    <li>Fiverr Logo Maker</li>
+                    <li>Fiver Guides</li>
+                    <li>Get Inspired</li>
+                    <li>Clear Voice</li>
+                    <li class="sub-item">Content Marketing</li>
+                    <li>AND CO</li>
+                    <li class="sub-item">Invoice Software</li>
+                    <li>Learn</li>
+                    <li class="sub-item">Online Courses</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <ul class="list-bottom">
+                <li>fiverr<span class="reg">&reg;</span></li>
+                <li>&copy;Fiverr International Ltd. 2021</li>
+                <li><i class="fa fa-user"></i></li>
+                <li class="inr-line"><i class="fa fa-inr"></i>INR</li>
+                <li class="eng-line"><i class="fa fa-globe"></i>English</li>
+                <li><i class="fa fa-instagram"></i></li>
+                <li><i class="fa fa-pinterest"></i></li>
+                <li><i class="fa fa-linkedin"></i></li>
+                <li><i class="fa fa-facebook"></i></li>
+                <li><i class="fa fa-twitter"></i></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

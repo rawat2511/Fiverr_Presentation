@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Graphics & Design</title>
+    <style>
+        @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+        .mainLoginInput{
+        height: 23px;
+        width: 20%;
+        padding: 0px;
+        font-size: 30px;
+        margin: 20px;
+        margin-right: 0px;
+        padding-bottom: 10px;
+        float: left;
+        border: 1px solid #b8b8b8;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        }
+
+        .mainLoginInput::-webkit-input-placeholder { 
+        font-family: FontAwesome,Arial;
+        font-size: 15px;
+        font-weight: normal;
+        overflow: visible;
+        vertical-align: top;
+        display: inline-block !important;
+        padding-left: 5px;
+        
+        
+        color: #808080;
+        }
+        #part1{
+            height: 70px;
+        }
+        .hr_grey{
+            clear: both;
+            border: 1px solid #f5f6f6;
+        }
+        #logo{
+            width: 90px;
+            height: 38%;
+            margin: 20px;
+            float: left;
+        }
+        
+       
+        #search_btn{
+            margin-top: 20px;
+            float: left;
+            width: 6%;
+            height: 35px;
+            color: white;
+            background-color: #1dbf73;
+            border: 1px solid #1dbf73;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            font-weight: bold;
+        }
+        .pt1_text{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            margin: 15px;
+            margin-top: 30px;
+            float: left;
+            color: #8f9198;
+        }
+        #green{
+            color: #43d2bf;
+            margin-left: 90px;
+        }
+        #join{
+            margin: 15px;
+            margin-top: 20px;
+            width: 65px;
+            height: 35px;
+            color: #5bd199;
+            background-color: white;
+            border: 1.5px solid #5bd199;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        #part2 > p{
+            float: left;
+            margin: 15px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #a6a9ad;
+        }
+        
+        #part3 > img{
+            margin: 20px;
+            width: 97%;
+            height: 250px;
+            border-radius: 10px;
+            
+        }
+        #part3{
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .centered {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #part3 > #h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        #part3 > #h2{
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            
+        }
+        #hfw{
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: Arial, Helvetica, sans-serif;
+            width: 200px;
+            height: 45px;
+            color: white;
+            background-color: #0a3a22;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-size: 17px;
+        }
+        #part4 > h2{
+            color: #404045;
+            font-family: macan,helvetica neue,Helvetica,Arial,sans-serif;
+            margin-left: 20px;
+        }
+        #part4 > div > div > h3{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #404045;
+            font-size: 17px;
+            margin-top: 23px;
+        }
+        #part4 > div > div{
+            
+            margin-top: 20px;
+            height: 67px;
+            border: 1px solid #efefef;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px 0 #efefef, 0 2px 2px 0 #efefef;
+            float: left;
+        }
+        #SEO{
+            margin-left: 20px;
+            width: 16%;
+        }
+        #part4 > div > div > img{
+            width: 48px;
+            margin: 10px;
+            float: left;
+        }
+        #SMM{
+            margin-left: 15px;
+            width: 15%;
+        }
+        #VM{
+            margin-left: 15px;
+            width: 23%;
+        }
+        #CM{
+            margin-left: 15px;
+            width: 20%;
+        }
+        #MP{
+            margin-left: 15px;
+            width: 18%;
+        }
+        #part5 > h2{
+            clear: both;
+            margin-top: 180px;
+            color: #404045;
+            font-family: macan,helvetica neue,Helvetica,Arial,sans-serif;
+            margin-left: 20px;
+        }
+        .cards{
+            float: left;
+            margin: 1.5%;
+            width: 21.8%;
+            height: 580px;
+        }
+        #part5 > #search{
+            margin-left: 20px;
+        }
+        #part5 > div > img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        #part5 > div > h3{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #241f2f;
+            font-size: 18px;
+        }
+        #part5 > div > h4{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #797f94;
+            font-size: 18px;
+            font-weight: normal;
+        }
+        .clear{
+            clear: both;
+        }
+        #digimar{
+            float: left;
+            color: #404045;
+            font-family: macan,helvetica neue,Helvetica,Arial,sans-serif;
+            margin-left: 20px;
+        }
+        #more{
+            float: right;
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            font-size: 16px;
+            color: #6a79f7;
+        }
+        .tiles{
+            width: 30%;
+            margin: 20px;
+            height: 380px;
+            float: left;
+        }
+        .tiles > img{
+            width: 100%;
+            border-radius: 8px;
+
+        }
+        .tiles > h3{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #414045;
+        }
+        #FAQ{
+            width: 100%;
+            height: 800px;
+            background-color: #fafafa;
+        }
+        #FAQ > h2{
+            margin: auto;
+            padding-top: 130px;
+            margin-bottom: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: #404046;
+            font-size: 24px;
+        }
+        .collapsible {
+            background-color: #fafafa;
+            color: #404046;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: justify;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #fafafa;
+            width: 80%;
+            color: #404046;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #services > h1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: #404046;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        #services >div> p{
+            float: left;
+            margin:7px;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 1px solid #efeff0;
+            background-color: #efeff0;
+            border-radius: 20px;
+            font-size: 13px;
+            font-family: Arial;
+            font-weight: 600;
+            color: #7d798f;
+        }
+        #oval1,#oval3{
+            margin-left: 150px;
+        }
+        #oval2{
+            margin-left: 100px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="part1">
+        <img id="logo" src="https://mms.businesswire.com/media/20200909005347/en/819490/5/Fiverr_Logo_GreenGreen_RGB.jpg"/>
+        <input class="mainLoginInput" type="text" placeholder="&#61442; Find Services"/> 
+        <button id="search_btn">Search</button>
+        <h2 class="pt1_text" id="green">Fiverr Pro</h2>
+        <h2 class="pt1_text">Explore</h2>
+        <h2 class="pt1_text"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+          </svg>  English</h2>
+        <h2 class="pt1_text"><i class="fa fa-rupee"></i> INR</h2>
+        <h2 class="pt1_text">Become a Seller</h2>
+        <h2 class="pt1_text">Sign In</h2>
+        <button id="join">Join</button>
+        
+        
+    </div>
+    <hr class="hr_grey"/>
+    <div id="part2">
+        <p>Graphics & Design</p>
+        <p>Digital Marketing</p>
+        <p>Writing & Translation</p>
+        <p>Video & Animation</p>
+        <p>Music & Audio</p>
+        <p>Programming & Tech</p>
+        <p>Data</p>
+        <p>Business</p>
+        <p>Lifestyle</p>
+    </div>
+    <hr class="hr_grey"/>
+
+    <div id="part3">
+        <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/3f1b7ea10295936b6846bcff0afd38cf-1626595415203/graphics-design-desktop.png"/>
+        <div class="centered" id="h1">Graphics & Design</div>
+        <div id="h2">Designs to make you stand out.</div>
+        <button id="hfw" > <i class="fa fa-play-circle"></i> How Fiverr Works</button>
+    </div>
+
+    <div id="part4">
+        <h2>Most Popular in Graphics & Design</h2>
+        <div>
+            <div id="SEO">
+                <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/97477f04af40de3aa1f8d6aa21f69725-1626179101614/Logo%20design_2x.png"/>
+                <h3> Logo Design  &#x279D;</h3>
+            </div>
+
+            <div id="SMM">
+                <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/97477f04af40de3aa1f8d6aa21f69725-1626179101633/Illustration_2x.png"/>
+                <h3> Illustration  &#x279D;</h3>
+            </div>
+
+            <div id="VM">
+                <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/97477f04af40de3aa1f8d6aa21f69725-1626179101618/Architecture%20_%20Interior%20Design_2x.png"/>
+                <h3> Architecture & Interior &#x279D;</h3>
+            </div>
+
+            <div id="CM">
+                <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/97477f04af40de3aa1f8d6aa21f69725-1626179101624/Photoshop%20Editing_2x.png"/>
+                <h3> Photoshop Editing  &#x279D;</h3>
+            </div>
+
+            <div id="MP">
+                <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/97477f04af40de3aa1f8d6aa21f69725-1626179101635/Website%20Design_2x.png"/>
+                <h3> Website Design  &#x279D;</h3>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="part5">
+        <h2>Explore Graphics & Design</h2>
+        <div class="cards" id="search">
+            <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/431c7d880582a199f5b240dde2694206-1626594004536/Logo%20_%20Brand%20Identity_B_2x.png"/>
+            <h3>Logo & Brand Identity</h3>
+            <h4>Logo Design</h4>
+            <h4>Brand Style Guides</h4>
+            <h4>Business Cards & Stationery</h4>
+        
+        </div>
+
+        <div class="cards">
+            <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/fa22b92aed2d9e4e17b63c7af717aa24-1626178498464/Gaming_2x.png"/>
+            <h3>Gaming</h3>
+            <h4>Game Art</h4>
+            <h4>Graphics for Streamers</h4>
+            <h4>Twitch Store</h4>
+        
+        </div>
+
+        <div class="cards">
+            <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/fa22b92aed2d9e4e17b63c7af717aa24-1626178498456/Art%20_Illustration_2x.png"/>
+            <h3>Art & Illustration</h3>
+            <h4>Illustration</h4>
+            <h4>Pattern Design</h4>
+            <h4>Portraits & Caricatures</h4>
+            <h4>Cartoons & Comics</h4>
+            <h4>Tattoo Design</h4>
+            <h4>Storyboards</h4>
+        
+        </div>
+
+        <div class="cards">
+            <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/431c7d880582a199f5b240dde2694206-1626594004528/Web%20_%20App_2x.png"/>
+            <h3>Web & App Design</h3>
+            <h4>Website Design</h4>
+            <h4>App Design</h4>
+            <h4>UX Design</h4>
+            <h4>Landing Page Design</h4>
+            <h4>Email Design</h4>
+            <h4>Icon Design</h4>
+            <h4>Web Banners</h4>
+        
+        </div>
+        
+        <div class="cards">
+            <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/fa22b92aed2d9e4e17b63c7af717aa24-1626178498477/Social_Media_2x.png"/>
+            <h3>Social Media</h3>
+            <h4>Social Media Design</h4>
+            <h4>AR Filters & Lenses</h4>
+        </div>
+
+        <div class="cards">
+            <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/fa22b92aed2d9e4e17b63c7af717aa24-1626178498470/Packaging_Labels_2x.png"/>
+            <h3>Packaging & Labels</h3>
+            <h4>Packaging Design</h4>
+            <h4>Book Design</h4>
+            <h4>Album Cover Design</h4>
+            <h4>Podcast Cover Art</h4>
+            <h4>Car Wraps</h4>
+        
+        </div>
+
+        <div class="cards">
+            <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/431c7d880582a199f5b240dde2694206-1626594004546/Visual%20Design_2x.png"/>
+            <h3>Visual Design</h3>
+            <h4>Photoshop Editing</h4>
+            <h4>Presentation Design</h4>
+            <h4>Infographic Design</h4>
+            <h4>Vector Tracing</h4>
+            <h4>Resume Design</h4>
+        
+        </div>
+
+        <div class="cards">
+            <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/a8ae03c1e91eac597223cdcdc1dd5b21-1626601242964/Architecture%20_%20Building%20%20Design.png"/>
+            <h3>Architecture & Building Design</h3>
+            <h4>Architecture & Interior Design</h4>
+            <h4>Landscape Design</h4>
+            <h4>Building Information Modeling</h4>
+        
+        </div>
+
+        <div class="cards">
+            <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/fa22b92aed2d9e4e17b63c7af717aa24-1626178498453/Fashion_Merchandise_2x.png"/>
+            <h3>Fashion & Merchandise</h3>
+            <h4>Fashion Design</h4>
+            <h4>T-Shirts & Merchandise</h4>
+            <h4>Jewelry Design</h4>
+        
+        </div>
+
+        <div class="cards">
+            <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/75513a77da804a4b04cf63c5231e5fe2-1627366825531/print_design_2x.png"/>
+            <h3>Print Design</h3>
+            <h4>Flyer Design</h4>
+            <h4>Brochure Design</h4>
+            <h4>Signage Design</h4>
+            <h4>Poster Design</h4>
+            <h4>Catalog Design</h4>
+            <h4>Menu Design</h4>
+            <h4>Postcard Design</h4>
+            <h4>Invitation Design</h4>
+        
+        </div>
+
+        <div class="cards">
+            <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/431c7d880582a199f5b240dde2694206-1626594004535/Product%20_%20Characters%20Design_2x.png"/>
+            <h3>Product & Characters Design</h3>
+            <h4>Industrial & Product Design</h4>
+            <h4>Character Modeling</h4>
+            <h4>Trade Booth Design</h4>
+        
+        </div>
+
+        <div class="cards">
+            <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/fa22b92aed2d9e4e17b63c7af717aa24-1626178498458/Misc_2x.png"/>
+            <h3>Miscellaneous</h3>
+            <h4>Other</h4>
+        
+        </div>
+
+
+        <div class="clear"></div>
+        <div>
+            <h2 id="digimar">Graphics & Design Related Guides</h2>
+            <h5 id="more">See more guides &#x3e;</h5>
+        </div>
+
+    </div>
+    <div class="clear"></div>
+    <div id="part6">
+        <div class="tiles">
+            <img src="https://fiverr-res.cloudinary.com/image/upload/w_430/q_auto,f_auto/v1/attachments/generic_asset/asset/10f680cb84a2f3ef4473ecfdede3a1ba-1593438129320/business%20logo%20design-fiverr%20guide.jpg"/>
+            <h3>How to design a logo: 12 steps to create a logo for your business</h3>
+        </div>
+
+        <div class="tiles">
+            <img src="https://fiverr-res.cloudinary.com/image/upload/w_430/q_auto,f_auto/v1/attachments/generic_asset/asset/2508960106117021baf4c9699b982213-1593436732817/children%27s%20book%20illustration.jpg"/>
+            <h3>How to illustrate a children's book: 9 steps to illustrate your book</h3>
+        </div>
+
+        <div class="tiles">
+            <img src="https://fiverr-res.cloudinary.com/image/upload/w_430/f_auto,q_auto/v1/attachments/generic_asset/asset/91c293673ad8b206e7125792c0e422b3-1612436784458/graphic%20design-min.jpg"/>
+            <h3>Graphic design 101: what is graphic design?</h3>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="FAQ">
+        <h2>Graphics & Design FAQs</h2>
+
+        <button type="button" class="collapsible">What is graphic design?</button>
+        <div class="content">
+            <p>Put simply, graphic design is the art and craft of creating visual content that communicates a concept, an idea or a brand message to the public. Logos, artworks, drawings, illustrations, cards, emails and a whole paraphernalia of designs are all around us. You can see them in print and digital media, in shops, restaurants and cafes, on billboards, books and magazines, in the apps we use, the sites we visit and the physical and digital products we buy. In fact, graphic design is a type of communication medium which uses visual means to convey a message. Designers use different types of physical materials or software to combine images, graphics and text as the main forms of expressing this message. Graphic design is used to sell, to build brand identity or to move people towards specific actions. It is also a form of art but ultimately, the different elements of the graphic representation influence our perceptions and emotions. There are different types of graphic design such as ‘visual identity’ which deals with the visual elements of the brand via shapes, colors and images (e.g. logo design, typography, brand style guides) and ‘marketing and advertising’ which is used directly to generate leads and sales via print (billboards, brochures, flyers, print ads) or digital (social media posts, banners, videos). There are many other types such as website design, industrial and product design, fashion design, book and illustrations, motion graphics design used for example by streamers or in gaming design and many others.</p>
+        </div>
+        <hr class="hr_grey"/>
+
+        <button type="button" class="collapsible">How to hire top graphic designers?</button>
+        <div class="content">
+            <p>A captivating visual presence is very important whether you’re a business or a non-commercial entity. Your potential audiences are already forming an opinion and deciding whether to interact with you based on what they see, long before you’ve had a chance to say or write something. So it’s imperative to carefully select the right freelancer to meet your needs and keep you within budget. There are many different areas in which graphic designers specialize so if you want to hire the right talent to meet the requirements of your particular project, here are some easy to follow tips and tricks. - Always research their portfolio on Fiverr and ask for more examples if necessary; - Carefully think about what your style and preferences are so you know what you like, what you don’t like and what you actually want (colors, graphics, images, etc); - Write a clear brief - depending on the size of the project your brief can be very short or contain a lot of detail. What’s important is to be clear on the important points; - Define a budget and be clear to yourself and the freelancer how far you can stretch it; - Form a clear agreement on deadlines and revisions and respect the work of the designer - if you are clear on the above points then there shouldn’t be any surprises; - Think long-term - a good designer will be able to help you holistically and develop an evolving long-term vision for your product or service.</p>
+        </div>
+        <hr class="hr_grey"/>
+
+        <button type="button" class="collapsible">How much does it cost to hire a graphic designer</button>
+        <div class="content">
+            <p>There is no simple answer to this question as graphic design is not a commodity or a product that has an exact way to be measured or priced. The great thing about Fiverr is that you can find a freelance graphic designer for any budget, starting from just $5 per gig and going up to hundreds or thousands of dollars for more complex and time and resource consuming requirements. However, there are a number of factors that will influence the final price of the project such as the level of experience of the seller (from novices to Top Rated and Pro Sellers), the number or service options included in the gig, delivery times, number of revisions and whether any extras might need to be added at some point. In fact, revisions can be a very tricky area for graphic design projects so it’s key for you to have very clear requirements to start with and also to agree with the seller what their output will be (e.g.how many initial versions they will offer) to avoid any misunderstandings or unwanted surprises on both sides. A more experienced designer will charge more, however, they can also help you define your requirements and save time (and money) in the long-run by keeping you on track for your goals. Alternatively, a new freelancer who’s perhaps less experienced or trying to build their reputation will be priced more competitively but might not have the skills or professional maturity of a seasoned creative director.</p>
+        </div>
+        <hr class="hr_grey"/>
+
+        <button type="button" class="collapsible">How do I write a good creative design brief?</button>
+        <div class="content">
+            <p>The creative brief is a key document that essentially defines the objectives, scope and key milestones of a design project. It gives the required information to the freelance graphic designer on what needs to be done, who the target audience will be, what key message(s) need to be communicated, what deliverables are expected, by when (deadlines and milestones). The creative brief is basically the blueprint that you’ll need to agree with your internal stakeholders, business partners or colleagues (or if you are a one-person-show - find a friend or someone you trust to use as a sounding board) and then present to the freelancer to guide, inspire them and ensure they deliver the best possible creative results. Here are some universal tips for writing a good creative brief that equally apply to most: - Start by answering the ‘what’ (your goal is) and ‘who’ (your audience is); - Be clear, concise and to the point - less is more in this case so avoid being too prescriptive and don’t elaborate too much; - Set realistic deadlines and factor in the time for feedback and revisions; - Ask for help - from your team, colleagues stakeholders; - Define what success will look like so both you and the designer can measure the results in the end (and stick to your initial definitions). Once you have all this, keep it as a template and use for future briefs as it’ll save you time and will ensure you can build long-term relationships with the graphic designers you work with.</p>
+        </div>
+        <hr class="hr_grey"/>
+
+        <button type="button" class="collapsible">What’s the best way to hire a designer in less than 48 hours?</button>
+        <div class="content">
+            <p>Finding a good graphic designer is very important for the way your business and brand is presented to your target audience so you need to be very careful in who you put your trust in. You will need to get to grips with some graphic design 101’s in order to become better at selection. Having said that, we know that sometimes there are business emergencies and you might find yourself in a situation when you need to hire a professional logo designer, illustration artist, front-end/UX or web designer or any type of freelance graphic designer in a hurry. The good news is that Fiverr can help you do that even if you only have 48 hours or less to complete your project. We have expert freelancers from around the globe, working 24/7 waiting to satisfy all your needs. Here’s what to do: - Publish a buyer request so you can reach a big audience of freelancers who can offer you their services; - Clearly state your requirements, your budget and your deadline and sellers will start to contact you immediately; - Make sure to follow through with offers and ask relevant questions about experience, how the freelancer will approach the project, expectations about time and milestones before you decide to place an order; - Read buyer reviews and ask for additional portfolio examples if not sure; - Look for the seller rating (Fiver Top Rated and Pro sellers will command higher prices but will have more experience and skills).</p>
+        </div>
+        <hr class="hr_grey"/>
+
+        <button type="button" class="collapsible">What makes graphic design so important?</button>
+        <div class="content">
+            <p>We live in a visual society so images, packaging, signage, illustrations, websites, apps and social media all vie for our attention, making it very challenging to become noticeable let alone memorable amongst the overload of visual stimuli. In a nutshell, the most important mission that graphic design plays is communication. Communication of ideas and messages, with the ultimate objective of elicit, prompt or evoke an action or an emotion (which will become an action in the future). So a good graphic designer will build your logo, create your email campaign or company stationery, do everything possible (given the right brief) to set you apart from your competition and convey a message that exudes trust, credibility and builds a consistent brand and company reputation. A well executed design project will ensure that the final output, be it a flyer or your product packaging, or even the design of your office space or your frontline staff’s uniforms summarizes your mission and vision statements and communicates in a clear and simple manner the main ideas that are behind your company or organization and what it stands for. When you hire a good graphic design professional, preferably one you can trust on more than one project, they will ensure that all representations of your products and brand are visually consistent, recognizable and conveying a clear message. Ultimately, when you ask yourself ‘How important is it that my customers recognize me?’, if the answer is ‘very important’ then so should graphic design be for your brand!</p>
+        </div>
+        
+    </div>
+
+    <div id="services">
+        <h1>Services Related To Graphics & Design</h1>
+        
+        <div id="oval1">
+            <p>Minimalist logo design</p>
+            <p>Signature logo design</p>
+            <p>Mascot logo design</p>
+            <p>3d logo design</p>
+            <p>Hand drawn logo design</p>
+            <p>Vintage logo design</p>
+
+        </div>
+        <div class="clear"></div>
+        <div id="oval2">
+            <p>Remove background</p>
+            <p>Photo restoration</p>
+            <p>Photo retouching</p>
+            <p>Image resize</p>
+            <p>Product label design</p>
+            <p>Custom twitch overlay</p>
+            <p>Custom twitch emotes</p>
+        
+        </div>
+        <div class="clear"></div>
+        <div id="oval3">
+            <p>Custom anime portrait</p>
+            <p>Children book illustration</p>
+            <p>Instagram design</p>
+            <p>Movie poster design</p>
+            <p>Box design</p>
+            <p>Logo maker</p>
+            <p>Logo ideas</p>
+        
+        </div>
+    </div>
+    <hr class="hr_grey"/>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>

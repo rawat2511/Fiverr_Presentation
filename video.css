@@ -1,0 +1,296 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*header*/
+.dot {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #1dbf73;
+    }
+.header {
+    width: 80%;
+    margin: auto;
+    color: rgb(90, 88, 88);
+    margin-bottom: 0px;
+    }
+.nav {
+    height: 80px;
+    }
+
+ul{
+    list-style-type: none;
+    box-sizing: border-box;
+}
+.nav li{
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+}
+#logo {
+    float: left;
+    font-size: 30px;
+    font-weight: 800;
+    margin-right: 0px;
+}
+.nav > ul > li~li{
+    margin-top: 12px;
+    margin-right: 15px;
+}
+.nav > ul>.gap{
+    margin-right: 150px;
+    margin-left: 0px;
+}
+input{
+    height: 28px;
+    margin: 0px;
+    width: 300px;
+    border: 1px solid rgb(90, 88, 88);
+    border-radius: 3px;
+    margin-right: 0px;
+}
+.search{
+    background-color:#1dbf73 ;
+    color: white;
+    height: 30px;
+    margin: 0px;
+    border: 1px solid #1dbf73;
+    width: 70px;
+    border-radius: 3px;
+    margin-left: 0px;
+    padding-top: 3px;    
+}
+.search:hover{
+    background-color: #0a7543;
+}
+.skyblue{
+    color: #02c2a9;
+}
+.adjust{
+    padding-top: 8px;
+    
+}
+.adjust:hover{
+    color: #1dbf73;
+}
+.join{
+    border: 1px solid #1dbf73;
+    width: 50px;
+    background-color: white;
+    padding:5px;
+    color: #1dbf73;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.join:hover{
+    color: white;
+    background-color: #1dbf73;
+}
+.mo{
+    padding-top: 0px;
+}
+.nav2 li{
+    float: left;
+    height: 30px;
+    margin: 5px 15px;
+    margin-bottom: 0px;
+    transition: 0.3s;
+}
+.nav2 li:hover{
+    text-decoration: 3px underline #1dbf73;
+    text-underline-position: under ;
+}
+/*End of Header*/
+.heading{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+.heading h1{
+    font-size: 40px;
+}
+.explainationvideo{
+    color: blue;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+.explainationvideo:hover{
+    text-decoration: underline;
+}
+.heading > h1+p , .content> p~p{
+    color: rgb(126, 119, 119);
+    margin:5px;
+    font-size: 16px;
+}
+.categories{
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-3{
+    flex-basis: 30%;
+    max-width: 300px;
+    margin-bottom: 30px;
+    position: relative;
+    flex-wrap: wrap;
+
+}
+.col-3 img{
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    
+}
+.col-3 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgba(0,0,0,0.4);
+    opacity: 0;
+    height: 82%;
+    transition: opacity 0.3s;
+    border-radius: 5px;
+}
+.overlay:hover{
+    opacity: 1 ;
+}
+
+.content2{
+    max-width: 900px;
+    margin: 0px;
+    
+}
+
+.small-container{
+    width: 100%;
+    padding-left: 25px;
+    padding-right:25px;
+    margin:auto;
+}
+.col-3 p , .content p{
+    font-size: 16px;
+    margin: 10px 0px;
+}
+.content{
+    min-width: 250px;
+    padding-left: 25px;
+    padding-right:25px;
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 80px; 
+}
+.content p~p{
+    margin: 20px 0px;
+    font-size: 16px;
+}
+.content p~p:hover{
+    text-decoration: underline;
+}
+.last_part{
+    display: flex;
+    text-align: center;
+    background: rgb(243, 241, 241);
+    margin: 70px 0;
+    height: 200px;
+    padding: 0px 100px;
+    justify-content: center;
+    width: 100%;
+}
+.last_part div{
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 16px;
+    margin-right: 100px;
+}
+.last_part h3{
+    font-size: 24px;
+    font-weight: lighter;
+}
+/*footer*/
+
+                                  /* footer top  */
+                                  .footer{
+                                      margin: auto;
+                                  }
+                                  .footer-top {
+                                    display: flex;
+                                    flex-direction: row;
+                                    border-top: 1px solid rgb(235, 231, 231);
+                                    margin-top: 120px;
+                                }
+                                .footer-top .list {
+                                    flex-grow: 1;
+                                    padding: 30px;
+                                    margin: 20px;
+                                }
+                                .footer-top li {
+                                    color: rgb(138, 133, 133);
+                                    padding-top: 20px;
+                                }
+                                .list > ul > .first-item {
+                                    color: black;
+                                    font-weight: bold;
+                                }
+                                .list > ul > .sub-item {
+                                    color: rgb(192, 185, 185);
+                                    font-size: 14px;
+                                    padding-top: 4px;
+                                }
+                                
+                                .desc {
+                                    width: 600px;
+                                    padding-top: 120px;
+                                }
+                                .desc > h1, .get-started > h1 {
+                                    font-size: 48px;
+                                }
+                                .list-bottom > li {
+                                    color: black;
+                                    float: right;
+                                    padding: 20px 10px 30px;
+                                }
+                                .list-bottom > li:first-child {
+                                    float: left;
+                                }
+                                .list-bottom > li:nth-child(2) {
+        float: left;
+}
+                             /* footer bottom  */
+                             .footer-bottom > .list-bottom> .inr-line, .footer-bottom > .list-bottom> .eng-line {
+                                font-size: 14px;
+                                font-weight: bold;
+                                color: rgb(141, 135, 135);
+                            }
+                            .inr-line > i, .eng-line > i {
+                                scale: 0.8;
+                            }
+                            .footer-bottom > .list-bottom> li:first-child {
+                                font-size: 24px;
+                                font-weight: 800;
+                                margin-left: 36px;
+                                color: #7a7a7a;
+                            }
+                            .reg {
+                                font-size: 10px;
+                                color: #8c8c8d;
+                            }
+                            .footer-bottom > .list-bottom> li:nth-child(2){
+                                color: #9e9ea0;
+                                margin-top: 10px;
+                            }
+                            .footer-bottom {
+                                border-top: 1px solid rgb(228, 222, 222);
+                            }
+                            
